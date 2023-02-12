@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>School of Architecture</title>
+    <!--PWA-->
+    <link rel="manifest" href="./manifest.json"> 
+<!-- partial:index.partial.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    <link href="./css/arquietectura.css" type="text/css" rel="stylesheet" />
+    
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   
+  
+</head>
+
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+   <div id="preloader"></div>
+  
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+              <a id="logo" href="#"><img class="logo" src="../img/GG RRSS-07.png">&nbsp;
+              </a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="../index.html" class="active">Inicio</a></li>
+                        <li><a href="../alumnos/mi-espacio.html" class="logged-in">Alumnos</a></li>
+                        <!--li><a href="../colaboradores/mi-espacio.html">Colaboradores</a></li-->
+                        <!--li><a href="#">About</a></li-->
+                        <!--li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li-->
+                            <li id="close-flyout"><span class="fas fa-times"></span></li>
+                            <li style="display: none;" class="logged-out menu-item">
+                                <a class=" registration" href="#" data-toggle="modal" data-target="#signinModal"><!--i class="fas fa-user"></i-->&nbsp;Accede</a>
+                            </li>
+                            <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+                                <!--li style="display: none;" class="menu-item logged-in"><a class="registration" href="./clinica/promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li-->&nbsp;
+                                <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Alumno</h1>
+                <p>Impulsamos con tecnología la educación a distancia</p>
+                <div id="contenido">
+  
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+<!--NUEVAS TARJETAS-->
+<div class="wrapper">
+
+  <a href="./materias.html">
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag popular">Landing Page</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">Desde $2999</p>
+        <h2 class="blog-title">Landing Page</h2>
+        <p class="blog-description">Quieres dar a conocer información escencial para tú público? esta es
+          la mejor opción.
+        </p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1554780336-390462301acf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <a href="landing-page.html" class="theme-btn-s2">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag web">Sitio WEB</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">Desde $6999</p>
+        <h2 class="blog-title">Sitio WEB</h2>
+        <p class="blog-description">Quieres tener un lugar en donde publicar todas tus ideas? muestrale
+          a las personas toda tu personalidad.
+        </p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1532332248682-206cc786359f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <a href="sitio-web.html" class="theme-btn-s2">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Tienda Virtual</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">E-Comerce</p>
+        <h2 class="blog-title">Desde $18999 MXN</h2>
+        <p class="blog-description">Looking to upgrade your gear? Here is the list of the best photography tools for this year</p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1532332248682-206cc786359f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <a href="landing-page.html" class="theme-btn-s2">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">App Móvil</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">Progressive Web App</p>
+        <h2 class="blog-title">Desde $11999 MXN</h2>
+        <p class="blog-description">Mediation has transformed my life. These are the best practices to get into the habit</p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <h3 class="profile-name">Savannah Nguyen</h3>
+            <p class="profile-followers">318 followers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Diseño UX</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">Diseño y planeación</p>
+        <h2 class="blog-title">Desde $4999</h2>
+        <p class="blog-description">Mediation has transformed my life. These are the best practices to get into the habit</p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <!--h3 class="profile-name">Savannah Nguyen</h3>
+            <p class="profile-followers">318 followers</p-->
+              <a href="diseño-ux.html" class="theme-btn-s2">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!--ORIGINAL
+      <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Psychology</p>
+        <img class="banner-img" src='https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#mediation #mentalwellness</p>
+        <h2 class="blog-title">Aplicación Móvil - PWA</h2>
+        <p class="blog-description">Mediation has transformed my life. These are the best practices to get into the habit</p>
+  
+        <div class="card-profile">
+          <img class="profile-img" src='https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          <div class="card-profile-info">
+            <h3 class="profile-name">Savannah Nguyen</h3>
+            <p class="profile-followers">318 followers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  
+  
+  </div>
+  
+  <!--TERMINAN NUEVAS TARJETAS-->
+  
+
+
+
+
+
+
+
+
+      <!--BOOTSTRAP SCRIPTS-->
+
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+  <div class="container p-5" style="z-index:1">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+                
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!--BOOTSTRAP SCRIPTS-->
+  
+      <!-- Modal  SignUP-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Registro:
+              Contraseña con al menos 6 caracteres
+            </h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+           </div>
+           <div class="modal-body">
+            <form id="signup-form">
+              <div class="form-group">
+                 <input type="text" id="signup-email" class="form-control"
+                 placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                 <input type="password" id="signup-password" class="form-control"
+                 placeholder="Contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+           </div>
+         </div>
+        </div>
+      </div>
+                 
+                 
+                 
+                  <!-- Modal  SignIn-->
+                  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                          promociones y avisos importantes
+                        </h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                       </div>
+                       <div class="modal-body">
+                          
+                        <form id="login-form">
+                           
+                          <!--div class="form-group">
+                             <input type="text" id="login-email" class="form-control"
+                             placeholder="E-mail" required>
+                          </div>
+                          <div class="form-group">
+                             <input type="password" id="login-password" class="form-control"
+                             placeholder="Contraseña" required>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                          
+                          <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                          <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                        </form>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+
+                  
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>Integrador</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Casos de Éxito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Integrador</h5>
+                <!--div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div-->
+
+                <h5 class="follow-us">Siguenos</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2022 <!--span class="fa fa-heart"></span--> by Innovation Technologies
+        </small>
+    </footer>
+
+
+
+
+
+          
+                <!--FIREBASE SCRIPTS-->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+            
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+              
+                <script>
+                   // Your web app's Firebase configuration
+                   var firebaseConfig = {
+     apiKey: "AIzaSyBu0Zk9fF00Ozr1huJHAfzApST6cStNSRo",
+    authDomain: "integrador-ab669.firebaseapp.com",
+    projectId: "integrador-ab669",
+    storageBucket: "integrador-ab669.appspot.com",
+    messagingSenderId: "625115839172",
+    appId: "1:625115839172:web:f37e25c92ac6b90a36e791",
+    measurementId: "G-PTQ50PD72R"
+  };
+            
+                   // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      // FireStore base de datos
+      const fs = firebase.firestore();
+      firebase.analytics();
+                </script>
+                <!--TERMINA FIREBASE-->
+
+
+
+    <!--Registro-->
+    <script src="./registro.js"></script>
+
+    <script src="./js/script.js"></script>
+
+      <!-- PWA -->
+      <script src="./script.js"></script>
+
+    <!--script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script-->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
+<!-- partial -->
+  
+</body>
+</html>
+

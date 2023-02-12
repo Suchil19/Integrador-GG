@@ -1,0 +1,175 @@
+
+/* start: hero section styles */
+#hero {
+
+  background: linear-gradient(to bottom, #033f5f , #038cba3b), url("https://images.unsplash.com/photo-1561089489-f13d5e730d72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 600px;
+  width: 100%;
+  border-radius: 0 0 200px 0;
+}
+
+#hero .fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(16, 112, 207, 0.953);
+  z-index: 1;
+}
+
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  margin: -50px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+}
+
+#hero .hero-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
+}
+/* end: hero section styles */
+/***** NUEVAS TARJETAS *****/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /*Tamaño de las letras de boton*/
+  .card .text2{
+    font-size: .6rem;
+  }
+  
+  .card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px #292a38;
+    background: none;
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .card h3{
+    font-size: 0.7rem;
+  }
+  
+  .card p{
+    font-size: .8rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 20px #0077ff94;
+  }
+  
+  .banner-img {
+    position: absolute;
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+  }
+  
+  .category-tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  .popular {
+    background: #17b57d;
+  }
+  
+  .technology {
+    background: #0077ff;
+  }
+  
+  .psychology {
+    background: #1acc8d;
+  }
+  
+  .web {
+    background: #00b7fa;
+  }
+  
+  .card-body {
+    /*margenes deñ text*/
+    margin: 15rem 1rem 1rem .5rem;
+  }
+  
+  .blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .blog-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #00b7fa;
+  }
+  
+  .blog-description {
+    color: #fff;
+    font-size: 0.7;
+    line-height: 1.2rem;
+  }
+  
+  
+  .card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-profile-info {
+    margin-left: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1rem;
+  }
+  
+  .profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+  }
+  
+  /***** TERMINAN TARJETAS ******/
+  
+  
+  
+  
